@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: cotishq/gitops-engine
-  tag: v2
+  tag: v3
   pullPolicy: IfNotPresent
 
 service:
