@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-engine
+  namespace: gitops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitops-engine
+  template:
+    metadata:
+      labels:
+        app: gitops-engine
+    spec:
+      containers:
+        - name: gitops-engine
+          image: cotishq/gitops-engine:v1
+          ports:
+            - containerPort: 8084

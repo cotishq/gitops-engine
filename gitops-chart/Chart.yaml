@@ -1,0 +1,9 @@
+apiVersion: v2
+name: gitops-engine
+description: GitOps-based deployment engine using Kubernetes and Helm
+
+type: application
+
+version: 0.1.0
+
+appVersion: "v1"
