@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: gitops-engine
-          image: cotishq/gitops-engine:v3
+          image: cotishq/gitops-engine:v4
           ports:
             - containerPort: 8084
